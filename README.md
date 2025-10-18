@@ -22,11 +22,26 @@ It automatically alerts or blocks users when visiting malicious or phishing webs
 
 1. Clone this repository:
 
-git clone https://github.com/your-username/safe-browsing-extension.git
+git clone https://github.com/neerajachalampalem-blip/safe-browsing-extension.git
 
 
 2. Open the project folder and replace
 "YOUR_API_KEY_HERE" with your actual Google Safe Browsing API key in background.js.
+
+## To Get a Google Safe Browsing API key
+
+->. Open Google Cloud Console → https://console.cloud.google.com/
+
+
+->. Create or select a Project.
+
+
+->. Go to APIs & Services → Library and enable Google Safe Browsing API (or “Safe Browsing API v4”) for that project.
+
+
+->. Go to APIs & Services → Credentials → Create credentials → API key.
+
+Google will generate a key string (e.g. AIza...). This is your API key.
 
 
 3. Open Chrome and go to chrome://extensions.
