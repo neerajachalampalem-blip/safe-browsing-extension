@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "Safe Browsing Extension",
+  "version": "1.0",
+  "description": "Blocks unsafe websites using Google Safe Browsing API.",
+  "permissions": [
+    "webNavigation",
+    "tabs",
+    "activeTab"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "host_permissions": [
+    "https://*/",
+    "http://*/",
+    "https://safebrowsing.googleapis.com/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  }
+}
